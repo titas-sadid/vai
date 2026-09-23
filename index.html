@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>My Soul 18+ | Premium Perfume</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<a class="logo" href="#home">My Soul <span>18+</span></a>
+<nav id="nav">
+<a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#order">Order</a><a href="#contact">Contact</a>
+</nav>
+<button class="menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+</div>
+</header>
+
+<main>
+<section class="hero container" id="home">
+<img class="hero-img" src="images/img_001.jpg" alt="My Soul 18+ Perfume">
+<div class="hero-copy reveal">
+<div class="kicker">Premium Signature Fragrance</div>
+<h1>My Soul 18+</h1>
+<p>A fragrance created to make every special moment more memorable.</p>
+<a href="#order" class="btn">ORDER NOW • ৳1,250</a>
+</div>
+</section>
+
+<section class="section" id="products">
+<div class="container">
+<div class="title reveal"><small>OUR PRODUCT</small><h2>My Soul 18+</h2><p>One signature variant — premium fragrance for your special moments.</p></div>
+<div class="products">
+
+<div class="card reveal">
+<img class="card-img" src="images/img_002.jpg" alt="My Soul 18+ Red">
+<h3>My Soul 18+</h3><p>Signature Red Edition</p><div class="price">৳ 1,250</div>
+<button class="btn" onclick="orderNow('My Soul 18+ - Red Edition')">ORDER NOW</button>
+</div>
+
+<div class="card reveal">
+<img class="card-img" src="images/img_003.jpg" alt="My Soul 18+ Gold">
+<h3>My Soul 18+</h3><p>Signature Gold Edition</p><div class="price">৳ 1,250</div>
+<button class="btn" onclick="orderNow('My Soul 18+ - Gold Edition')">ORDER NOW</button>
+</div>
+
+<div class="card reveal">
+<img class="card-img" src="images/img_004.jpg" alt="My Soul 18+ Purple">
+<h3>My Soul 18+</h3><p>Signature Purple Edition</p><div class="price">৳ 1,250</div>
+<button class="btn" onclick="orderNow('My Soul 18+ - Purple Edition')">ORDER NOW</button>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="about">
+<div class="container about">
+<div class="about-box reveal">
+<h3>My Soul 18+ এর বিশেষত্ব</h3>
+<p>My Soul 18+ এমন একটি সুগন্ধি, যা আপনার ব্যক্তিত্বকে আরও আকর্ষণীয় করে তুলতে সাহায্য করে। এর মনোমুগ্ধকর ঘ্রাণ বিশেষ মুহূর্তগুলোকে আরও স্মরণীয় করে তোলে এবং দীর্ঘসময় একটি সুন্দর সুবাসের অনুভূতি দেয়।</p>
+<div class="features">
+<div class="feature">✓ আকর্ষণীয় ফ্র্যাগরেন্স</div><div class="feature">✓ দীর্ঘস্থায়ী ঘ্রাণ</div>
+<div class="feature">✓ প্রিমিয়াম কোয়ালিটি</div><div class="feature">✓ বিশেষ মুহূর্তের জন্য</div>
+</div>
+</div>
+<div class="about-box reveal">
+<h3>সুগন্ধের অনুভূতি</h3>
+<p>রোজ এসেন্স, ভ্যানিলা ও অ্যাম্বারের উষ্ণতার অনুপ্রেরণায় তৈরি এই fragrance আপনার চারপাশে একটি আকর্ষণীয় ও রোমান্টিক পরিবেশ তৈরি করতে পারে।</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="gallery">
+<div class="container">
+<div class="title reveal"><small>GALLERY</small><h2>My Soul 18+ Gallery</h2></div>
+<div class="gallery-wrap">
+<button class="gbtn prev" onclick="moveGallery(-1)">‹</button>
+<div class="gallery-track" id="galleryTrack">
+<div class="gitem"><img src="images/img_005.jpg" alt="My Soul 18+ Gallery 1"></div>
+<div class="gitem"><img src="images/img_006.jpg" alt="My Soul 18+ Gallery 2"></div>
+<div class="gitem"><img src="images/img_007.jpg" alt="My Soul 18+ Gallery 3"></div>
+<div class="gitem"><img src="images/img_008.jpg" alt="My Soul 18+ Gallery 4"></div>
+<div class="gitem"><img src="images/img_009.jpg" alt="My Soul 18+ Gallery 5"></div>
+<div class="gitem"><img src="images/img_010.jpg" alt="My Soul 18+ Gallery 6"></div>
+</div>
+<button class="gbtn next" onclick="moveGallery(1)">›</button>
+</div>
+</div>
+</section>
+
+<section class="section" id="order">
+<div class="container">
+<div class="title reveal"><small>ORDER NOW</small><h2>Get My Soul 18+</h2></div>
+<div class="order-box reveal">
+<div class="order-info">
+<h3>My Soul 18+</h3>
+<p>Premium signature perfume with delivery available across Bangladesh.</p>
+<div class="order-price">৳ 1,250</div>
+<div class="delivery">+ Delivery Charge ৳ 90</div>
+<p style="margin-top:20px">Total for 1 bottle: <b>৳ 1,340</b></p>
+</div>
+<form id="orderForm">
+<h3>Order Details</h3>
+<div class="row">
+<div class="field"><label>Full Name *</label><input id="name" required placeholder="Your name"></div>
+<div class="field"><label>Phone *</label><input id="phone" required placeholder="01XXXXXXXXX"></div>
+</div>
+<div class="row">
+<div class="field"><label>Quantity</label><select id="qty"><option value="1">1 Bottle</option><option value="2">2 Bottles</option><option value="3">3 Bottles</option><option value="4">4 Bottles</option><option value="5">5 Bottles</option></select></div>
+<div class="field"><label>Delivery Area</label><select id="area"><option>Inside Dhaka</option><option>Outside Dhaka</option></select></div>
+</div>
+<div class="field"><label>Full Delivery Address *</label><textarea id="address" required placeholder="House, Road, Area, Thana, District"></textarea></div>
+<div class="total"><span>Total</span><span id="total">৳ 1,340</span></div>
+<button class="submit" type="submit">🟢 ORDER ON WHATSAPP</button>
+</form>
+</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="container">
+<div class="title reveal"><small>CONTACT</small><h2>Contact Us</h2></div>
+<div class="contact-grid">
+<div class="contact-card reveal"><b>Phone</b><span>01804666410</span></div>
+<div class="contact-card reveal"><b>Email</b><span>shahinsardar3491@gmail.com</span></div>
+<div class="contact-card reveal"><b>WhatsApp</b><span>01804666410</span></div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container"><h3>My Soul 18+</h3><p>Premium Fragrance • © 2026 All Rights Reserved</p></div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
